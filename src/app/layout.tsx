@@ -1,9 +1,19 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Anchor · Fantasy Mode",
-  description: "UI-first personal operating system for focus and follow-through",
+  title: "Anchor",
+  description: "Three priorities. One day. Stay grounded.",
+  openGraph: {
+    title: "Anchor",
+    description: "Three priorities. One day. Stay grounded.",
+    type: "website",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
